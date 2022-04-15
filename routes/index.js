@@ -12,12 +12,7 @@ router.get("/healthcheck", logger, (req, res) => {
 });
 
 router.all("*", logger, (req, res) => {
-  res
-    .json({
-      status: 404,
-      message: "Not Found",
-    })
-    .status(404);
+  res.sendStatus(404);
 });
 
 module.exports = router;

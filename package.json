@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "jest",
     "start": "node index.js"
   },
   "repository": {
@@ -19,7 +19,10 @@
   "homepage": "https://github.com/amirmfallah/simple-restful-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.3",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
     "supertest": "^6.2.2"
   }
 }
