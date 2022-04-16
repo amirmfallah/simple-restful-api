@@ -11,6 +11,15 @@ router.get("/healthcheck", logger, (req, res) => {
     .status(200);
 });
 
+router.get("/new-endpoint", logger, (req, res) => {
+  res
+    .json({
+      status: 200,
+      message: "Operational",
+    })
+    .status(200);
+});
+
 router.all("*", logger, (req, res) => {
   res.sendStatus(404);
 });
